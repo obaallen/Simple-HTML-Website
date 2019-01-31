@@ -1,3 +1,4 @@
+
 #full {
     margin:auto;
     font-family: Arial, sans-serif;
@@ -9,6 +10,59 @@
     font-family: Arial, sans-serif;
     font-size: 19px;
     font-weight: bold;
+    color: black;
+}
+#bgcontent {
+    position: relative;
+    z-index: 0;
+}
+#bgcontent1 {
+    margin:0 auto;
+}
+#overlay {
+    font-family: Times, Arial;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 2px 2px 2px #000000;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 12.5%;
+    right: 0;
+    top: 45%;
+}
+#overlay1{
+    font-family: Times, Arial;
+    /* font-size: 35px; */
+    text-align: left;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    left: 53%;
+    top: 47%;
+    right: 0;
+}
+.buttonstyle {
+  background-color: #420101;
+  border: none;
+  color: white;
+  padding: 20px 52px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 3;
+  left: 12.5%;
+  top: 74%;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 .inner1 {
     background-color: teal;
@@ -21,4 +75,19 @@
     height: 400px;
     padding: 10px;
     color: white;
+}
+#footer {
+    width: 100%;
+    height: 40%;
+    background-color: #000000;
+    color: white;
+    margin:auto;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+.a {
+  color: white
+}
+a {
+  color: black
 }
