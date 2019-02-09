@@ -1,23 +1,5 @@
 $color: white;
 $majoralign: center;
-%mobile {
-  height: 300px;
-  padding: 100px;
-  font-family: Times, Arial;
-  color: $color;
-  font-size: 55px;
-  text-align: $majoralign;
-  font-weight: bold;
-}
-%nonmobile {
-  height: 150px;
-  padding: 30px;
-  font-family: Times, Arial;
-  color: $color;
-  font-size: 55px;
-  text-align: $majoralign;
-  font-weight: bold;
-}
 
 #bgcontent {
     margin:auto;
@@ -52,40 +34,58 @@ $majoralign: center;
 }
 
 @media (min-width: 650px) {
+  %nonmobile {
+    height: 300px;
+    padding: 100px;
+    font-family: Times, Arial;
+    color: $color;
+    font-size: 55px;
+    text-align: $majoralign;
+    font-weight: bold;
+  }
    .imagemobile {
        padding: 40px;
        width: 100%
    }
    .headhome {
        background-color: black;
-       @extend %mobile
+       @extend %nonmobile
    }
    .headhome1 {
        background-color: teal;
-       @extend %mobile
+       @extend %nonmobile
    }
    .headhome2 {
        background-color: #dd7700;
-       @extend %mobile
+       @extend %nonmobile
    }
 }
 
 @media (max-width: 649px) {
+  %mobile {
+    height: 150px;
+    padding: 30px;
+    font-family: Times, Arial;
+    color: $color;
+    font-size: 55px;
+    text-align: $majoralign;
+    font-weight: bold;
+  }
    .imagemobile {
        padding: 10px;
        width: 100%
    }
    .headhome {
        background-color: black;
-       @extend %nonmobile
+       @extend %mobile
    }
    .headhome1 {
        background-color: teal;
-       @extend %nonmobile
+       @extend %mobile
    }
    .headhome2 {
        background-color: #dd7700;
-       @extend %nonmobile
+       @extend %mobile
    }
 }
 
