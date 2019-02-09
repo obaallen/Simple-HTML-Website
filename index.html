@@ -1,45 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Webpage</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Allen's Webpage</title>
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-      <div>
-        <table id="menu" style="width: 80%; color=black">
-          <tr>
-            <td style="text-align: left; width: 50%">
-              <a href="index.html"><img src="https://obaallen.com/weddings/wp-content/uploads/2019/01/AO-WEDDING-logo-BLACK.png" alt="logo" width="200"></a>
-            </td>
-            <td style="text-align: right; width: 50%">
-              <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Contact</a>
-            </td>
-          <tr>
-        </table>
-      </div>
-      <div >
-        <span id="overlay1"><p><h1>Welcome to Allen's Website</h1></p></span>
-        <span id="overlay"><h1>Photographer & Developer<br/>in Toronto</h1></span>
-        <a href="about.html"><button class="buttonstyle" type="button">Read About Me!</button></a>
-        <img src="images/IMG_3066.jpg" id="bgcontent" alt="bg" width="100%" class="center">
-      </div>
-      <div id="footer">
-        <table style="width: 90%">
-          <tr>
-            <td style="text-align: left; width: 60%">
-            </td>
-            <td style="text-align: right; width: 40%">
-              <a href="#" class="a">Home</a><br/><a href="about.html" class="a">About</a><br/><a href="#" class="a">Services</a><br/><a href="#" class="a">Contact</a>
-            </td>
-          <tr>
-          <tr>
-            <td style="text-align: right; width: 60%">
-              <p> copyright (c) 2019 </p>
-            </td>
-            <td style="text-align: right; width: 40%">
-            </td>
-          <tr>
-        </table>
-      </div>
+       <div class="container">
+          <header>
+            <div class="row align-items-end">
+              <div class="col-6">
+                <a href="index.html"><img src="images/AO-logo.png" alt="logo" width="250px"></a>
+              </div>
+              <div class="col-6 right">
+                <a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="about.html">About</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="services.html">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="contact.html">Contact</a>
+              </div>
+            </div>
+          </header>
+
+          <div class="row">
+            <div>
+              <img src="images/bag-electronics.jpg" id="bgcontent" alt="bg">
+            </div>
+          </div>
+
+          <div class="center">
+            <br><hr><br><span><p><h3>Photographer & Developer</h3></p></span>
+            <span><h6>I love to create, either by creating candid and artistic photographs or creating interactive web applications.</h6></span>
+            <br><a class="btn btn-danger btn-lg" href="#things-we-do" role="button">Things I Do</a>
+          </div>
+
+          <div id="things-we-do">
+
+            <div class="row">
+              <div class="col-12 center">
+                <h3><br/><hr><br/>Things I do<br/><hr style="width: 30%"><br/></h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2">
+              </div>
+              <div class="col-lg-4 col-sm-6 align-self-center">
+                <p class="home-text">Web Apps<br/>Ready for Mobile</p>
+                <p class="center"> I create great apps that run great on all devices.</p>
+              </div>
+              <div class="col-1">
+              </div>
+              <div class="col-lg-3 col-sm-6 center">
+                <img src="images/rsz_phone-stock-photo.png">
+              </div>
+              <div class="col-2">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12" style="padding: 30px">
+                <hr>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-2">
+              </div>
+              <div class="col-lg-3 col-sm-6 center">
+                <img src="images/rsz_camera.png">
+              </div>
+              <div class="col-2">
+              </div>
+              <div class="col-lg-3 col-sm-6 align-self-center">
+                <p class="home-text">Photography</p>
+                <p class="center"> I love to take photos that tell stories.</p>
+              </div>
+              <div class="col-2">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-3">
+              </div>
+              <div class="col-6" style="padding: 40px">
+                <a href="contact.html" class="btn btn-success btn-lg btn-block" role="button" aria-pressed="true">Get in touch!</a>
+              </div>
+              <div class="col-3">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="footer" class="dont-print">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+              </div>
+              <div class="col-4">
+              </div>
+              <div class="col-4 right">
+                  <a href="index.html">Home</a><br/><a href="about.html">About</a><br/><a href="services.html">Services</a><br/><a href="contact.html">Contact</a>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-4 center">
+                  <p> copyright (c) 2019 </p>
+                </div>
+                <div class="col-4">
+                </div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>

@@ -1,0 +1,96 @@
+$color: white;
+$majoralign: center;
+%mobile {
+  height: 300px;
+  padding: 100px;
+  font-family: Times, Arial;
+  color: $color;
+  font-size: 55px;
+  text-align: $majoralign;
+  font-weight: bold;
+}
+%nonmobile {
+  height: 150px;
+  padding: 30px;
+  font-family: Times, Arial;
+  color: $color;
+  font-size: 55px;
+  text-align: $majoralign;
+  font-weight: bold;
+}
+
+#bgcontent {
+    margin:auto;
+    text-align: $majoralign;
+    width: 100%;
+}
+
+#footer {
+    height: 40%;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    a {
+        color: white
+    }
+}
+
+.center {
+    text-align: $majoralign;
+}
+
+.right {
+    text-align: right;
+}
+
+.home-text {
+    text-align: $majoralign;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+@media (min-width: 650px) {
+   .imagemobile {
+       padding: 40px;
+       width: 100%
+   }
+   .headhome {
+       background-color: black;
+       @extend %mobile
+   }
+   .headhome1 {
+       background-color: teal;
+       @extend %mobile
+   }
+   .headhome2 {
+       background-color: #dd7700;
+       @extend %mobile
+   }
+}
+
+@media (max-width: 649px) {
+   .imagemobile {
+       padding: 10px;
+       width: 100%
+   }
+   .headhome {
+       background-color: black;
+       @extend %nonmobile
+   }
+   .headhome1 {
+       background-color: teal;
+       @extend %nonmobile
+   }
+   .headhome2 {
+       background-color: #dd7700;
+       @extend %nonmobile
+   }
+}
+
+@media print {
+   .dont-print {
+       display: none;
+   }
+}
